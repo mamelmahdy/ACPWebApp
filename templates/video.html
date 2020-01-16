@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+
+{%block content%}
+<div class="video">
+  <h3>Video {{ video.id }}</h3>
+  <video width="100%" controls>
+    <source src="{{url_for('.static', filename='videos/'+video.id+'.mp4')}}">
+  </video>
+	<form action='/video/{{video.id}}' method="post" name='{{video.id}}'>
+		<div class="row form-control">
+			<button type="submit" class="btn">Next</button>
+		</div>
+	</form>
+</div>
+{%endblock%}

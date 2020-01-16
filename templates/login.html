@@ -1,0 +1,23 @@
+
+{% block styles %}
+<link rel="stylesheet"
+      href="{{url_for('.static', filename='style.css')}}">
+{% endblock %}
+
+{%block content%}
+<div class="loginForm">
+  <h1>Welcome to COMPANY NAME</h1>
+  <h3>Please Login</h3>
+	<form action="/login" method="post" name="loginform">
+    <div class="row form-control">
+      <input class="form-input" type="text" name="user" placeholder="username/email">
+    </div>
+    <div class="row form-control">
+      <input class="form-input" type="password" name="password" placeholder="password">
+    </div>
+		<div class="row form-control">
+			<button type="submit" class="btn">Login</button>
+		</div>
+	</form>
+</div>
+{%endblock%}

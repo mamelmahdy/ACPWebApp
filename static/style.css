@@ -1,0 +1,97 @@
+.loginForm {
+  margin: auto;
+  width: 50%;
+  text-align: center;
+  padding-top: 20%;
+}
+
+.form-control {
+  padding: 20px;
+}
+
+.form-input {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+  max-width: 100%;
+}
+
+.video {
+  margin: auto;
+  width: 75%;
+  text-align: center;
+  padding-top: 5%;
+}
+
+.question {
+  margin: auto;
+  width: 50%;
+  text-align: center;
+  padding-top: 5%;
+}
+
+.profile {
+  text-align: center;
+  padding-top: 5%;
+  margin: auto;
+  width: 50%;
+}
+
+.home {
+  text-align: center;
+  padding-top: 5%;
+  margin: auto;
+  width: 50%;
+}
+
+.home a{
+  text-decoration: none;
+  padding: 20px;
+  color: white;
+  background-color: #3783c2;
+  border-radius: 4px;
+  font-size: 1.5rem;
+}
+
+.home a:hover{
+  background-color: #72bcdb;
+}
+
+.btn {
+  background-color: #3783c2;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+  font-size: 1.5rem;
+}
+
+.btn:hover {
+  background-color: #72bcdb;
+}
+
+.navbar {
+  text-align: center;
+  margin: auto;
+  background-color: #3783c2;
+  padding: 20px;
+}
+
+.navbar a{
+  text-decoration: none;
+  padding: 20px;
+  color: white;
+  font-size: 1.5rem;
+}
+
+.navbar a:hover{
+  background-color: #72bcdb;
+}
+
+.navbar a:active{
+  color: white;
+}

@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+
+{%block content%}
+<div class="question">
+  <h3>Question {{ question.id }}</h3>
+  <p>{{ question.text }}</p>
+	<form action='/question/{{question.id}}' method="post" name='{{question.id}}'>
+    {% for i in question.answers %}
+    <div class="row form-control">
+      <input class="form-radio" type="radio" name='{{ question.id }}' value='{{ i[1] }}'>
+      {{ i[0] }}
+    </div>
+    {% endfor %}
+		<div class="row form-control">
+			<button type="submit" class="btn">Next</button>
+		</div>
+	</form>
+</div>
+{%endblock%}
